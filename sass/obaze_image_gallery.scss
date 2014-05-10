@@ -1,15 +1,121 @@
 @charset "UTF-8";
 /*CSS Document*/
 
+@import "reset";
+@import "font_family";
+@mixin link_visited_color{color:#CACACA};
+$link_color:#000000;
+$hover_color:#ff0000;
+
 body{
 	background-image: url(../imgs/other/back_ground.png);
 	background-repeat: repeat-x repeat-y;
-	font: 10px;
+	font: 100%;
 	width: 100%;
+	font-family: $lucida;
+}
+
+.body{
+	clear:both;
+	width: 100%;
+	
+	.mainHeader{
+		height: 85px;
+		width: auto;
+		overflow: hidden;
+		background-color: white;
+		
+		.logoContainer{
+			width:8%;
+			height: auto;
+			float: left;
+			margin-left: .75%;
+			padding-top: 12px;
+		}
+		
+		.navLinks{
+			height:55px;
+			width: 45%;
+			float: right;
+			margin-top: 10px;
+			padding-top: 20px;
+				
+			ul{
+				float: right;
+				width: 40%;
+			}
+			
+			a{
+				text-decoration: none;
+				
+			}
+		
+			li{
+				display: block;
+				float: left;
+				list-style: none;
+				margin:3%;
+				padding-top: 12px;
+			}
+		}
+	}
+}
+
+a:link{
+	color: $link_color;
+	}
+	
+a:visited{
+	color: $link_color;
+}
+a:hover{
+	color: $hover_color;
+}
+
+a:active{
+	color: $hover_color;
 }
 
 .wrapper{
-	width: 50%;
 	margin: 0 auto;
-	border: red solid 1px;
+	border: 1px solid #d000ff;
+	width: 70%;
+	height: 300px;
+	clear: both;
+	
+	.image_gallery{
+		
+	}
 }
+
+/* START OF FOUNDATION CSS*/
+
+.top-bar{
+	background: #CACACA;
+	height: 70px;
+	.name{
+		width: 30%;
+		height: auto;
+		img{
+			width: 80%;
+			height: auto;
+			margin-top: 10px;
+			margin-left: 10%;
+			}
+	}
+}
+
+
+/*@mixin link_visited_color{
+	color:#808080
+}
+
+a:link, a:visited{
+	color:#CF5C3F
+	
+}
+
+a:hover, a:active{
+	background-color:#CF5C3F;
+	color:#FFF;
+}*/

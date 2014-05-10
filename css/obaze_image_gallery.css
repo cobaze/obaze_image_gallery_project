@@ -1,16 +1,180 @@
 @charset "UTF-8";
 /*CSS Document*/
-/* line 4, ../sass/obaze_image_gallery.scss */
+/*START RESET*/
+/* line 11, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 20, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 22, ../sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 24, ../sass/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 33, ../sass/reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 36, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*END RESET*/
+/* START FONT FAMILY*/
+/* END FONT FAMILY*/
+/* line 10, ../sass/obaze_image_gallery.scss */
 body {
   background-image: url(../imgs/other/back_ground.png);
   background-repeat: repeat-x repeat-y;
-  font: 10px;
+  font: 100%;
   width: 100%;
+  font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
 }
 
-/* line 11, ../sass/obaze_image_gallery.scss */
-.wrapper {
-  width: 50%;
-  margin: 0 auto;
-  border: red solid 1px;
+/* line 18, ../sass/obaze_image_gallery.scss */
+.body {
+  clear: both;
+  width: 100%;
 }
+/* line 22, ../sass/obaze_image_gallery.scss */
+.body .mainHeader {
+  height: 85px;
+  width: auto;
+  overflow: hidden;
+  background-color: white;
+}
+/* line 28, ../sass/obaze_image_gallery.scss */
+.body .mainHeader .logoContainer {
+  width: 8%;
+  height: auto;
+  float: left;
+  margin-left: .75%;
+  padding-top: 12px;
+}
+/* line 36, ../sass/obaze_image_gallery.scss */
+.body .mainHeader .navLinks {
+  height: 55px;
+  width: 45%;
+  float: right;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+/* line 43, ../sass/obaze_image_gallery.scss */
+.body .mainHeader .navLinks ul {
+  float: right;
+  width: 40%;
+}
+/* line 48, ../sass/obaze_image_gallery.scss */
+.body .mainHeader .navLinks a {
+  text-decoration: none;
+}
+/* line 53, ../sass/obaze_image_gallery.scss */
+.body .mainHeader .navLinks li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 3%;
+  padding-top: 12px;
+}
+
+/* line 64, ../sass/obaze_image_gallery.scss */
+a:link {
+  color: black;
+}
+
+/* line 68, ../sass/obaze_image_gallery.scss */
+a:visited {
+  color: black;
+}
+
+/* line 71, ../sass/obaze_image_gallery.scss */
+a:hover {
+  color: red;
+}
+
+/* line 75, ../sass/obaze_image_gallery.scss */
+a:active {
+  color: red;
+}
+
+/* line 79, ../sass/obaze_image_gallery.scss */
+.wrapper {
+  margin: 0 auto;
+  border: 1px solid #d000ff;
+  width: 70%;
+  height: 300px;
+  clear: both;
+}
+
+/* START OF FOUNDATION CSS*/
+/* line 93, ../sass/obaze_image_gallery.scss */
+.top-bar {
+  background: #CACACA;
+  height: 70px;
+}
+/* line 96, ../sass/obaze_image_gallery.scss */
+.top-bar .name {
+  width: 30%;
+  height: auto;
+}
+/* line 99, ../sass/obaze_image_gallery.scss */
+.top-bar .name img {
+  width: 80%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 10%;
+}
+
+/*@mixin link_visited_color{
+	color:#808080
+}
+
+a:link, a:visited{
+	color:#CF5C3F
+	
+}
+
+a:hover, a:active{
+	background-color:#CF5C3F;
+	color:#FFF;
+}*/
