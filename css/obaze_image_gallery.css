@@ -2,5 +2,15 @@
 /*CSS Document*/
 /* line 4, ../sass/obaze_image_gallery.scss */
 body {
-  background-image: url(file:///Chuck%20Obaze/AiA%20Spring%202014%20Session/java_script/projects/project_3/image_gallery_project/imgs/other/bg.png)
+  background-image: url(../imgs/other/back_ground.png);
+  background-repeat: repeat-x repeat-y;
+  font: 10px;
+  width: 100%;
+}
+
+/* line 11, ../sass/obaze_image_gallery.scss */
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+  border: red solid 1px;
 }

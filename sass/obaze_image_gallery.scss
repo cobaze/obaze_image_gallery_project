@@ -2,5 +2,14 @@
 /*CSS Document*/
 
 body{
-	background-image: url(imgs/)
+	background-image: url(../imgs/other/back_ground.png);
+	background-repeat: repeat-x repeat-y;
+	font: 10px;
+	width: 100%;
+}
+
+.wrapper{
+	width: 50%;
+	margin: 0 auto;
+	border: red solid 1px;
 }
