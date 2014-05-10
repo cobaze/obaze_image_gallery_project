@@ -6,6 +6,18 @@
 @mixin link_visited_color{color:#CACACA};
 $link_color:#000000;
 $hover_color:#ff0000;
+@mixin rounded_borders($color, $width: 80%, $rounding: 20px) {
+  -moz-border-radius: $rounding $rounding;
+  -webkit-border-radius: $rounding $rounding; 
+  -khtml-border-radius: $rounding $rounding;
+  -o-border-radius: $rounding $rounding;
+  border-radius: $rounding $rounding;
+  border: $width $color solid;
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;}
+
+
 
 body{
 	background-image: url(../imgs/other/back_ground.png);
@@ -80,42 +92,27 @@ a:active{
 	margin: 0 auto;
 	border: 1px solid #d000ff;
 	width: 70%;
-	height: 300px;
+	height: 3000px;
 	clear: both;
 	
-	.image_gallery{
-		
+	.imageGallery{
+		@include rounded_borders(#4e4e4e, 20px)}
+}
+
+#pic{
+	width:50%;
+	display: block;
+	margin: 0 auto;
+}
+
+.hide{
+	display:none;
 	}
-}
-
-/* START OF FOUNDATION CSS*/
-
-.top-bar{
-	background: #CACACA;
-	height: 70px;
-	.name{
-		width: 30%;
-		height: auto;
-		img{
-			width: 80%;
-			height: auto;
-			margin-top: 10px;
-			margin-left: 10%;
-			}
-	}
-}
 
 
-/*@mixin link_visited_color{
-	color:#808080
-}
 
-a:link, a:visited{
-	color:#CF5C3F
-	
-}
 
-a:hover, a:active{
-	background-color:#CF5C3F;
-	color:#FFF;
-}*/
+
+
+
+

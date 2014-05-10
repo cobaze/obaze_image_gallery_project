@@ -28,15 +28,8 @@
 		
 	<div class="wrapper">
 		<div class="imageGallery">
-		
-			<div id="albums">
-				<a href="#wedding" title="Weddings">Weddings</a>
-				<a href="#headshot" title="Headshots">Headshot</a>
-				<a href="#products" title="Products">Products</a>
-				<a href="#landscape" title="Landscape">Landscape</a>
-			</div>
 			
-			<nav id="main">
+			<div id="mainGallery">
 			
 			<div id="weddings">
                 <a href="imgs/gallery_photos/weddings/weddings_1.jpg" title="Wedding Photo 1">Wedding Photo 1</a>
@@ -90,10 +83,17 @@
                 <a href="imgs/gallery_photos/landscape/landscape_10.jpg" title="landscape Photo 10">landscape Photo 10</a>
 			</div>
 			     
-			</nav>
+			</div>
 			
-			<img id="pic" src="imgs/frog1.jpg" alt="Gallery Frog Image"/>
-			<p id="caption">Wedding 1</p>
+			<div id="albums">
+				<a href="#wedding" title="Weddings">Weddings</a>
+				<a href="#headshot" title="Headshots">Headshot</a>
+				<a href="#products" title="Products">Products</a>
+				<a href="#landscape" title="Landscape">Landscape</a>
+			</div>
+			
+			<img id="pic" src="imgs/gallery_photos/weddings/weddings_1.jpg" alt="Wedding Photo"/>
+			<p id="caption">Wedding Photo 1</p>
 			
 		</div>
 		
@@ -118,6 +118,7 @@
 		<!--START JAVASCRIPT-->
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/foundation.min.js"></script>
+       <script src="js/obaze_image_gallery.js"></script>
 		<script>
 		  $(document).foundation();
 		</script>
