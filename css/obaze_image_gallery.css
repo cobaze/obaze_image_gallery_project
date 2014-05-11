@@ -62,7 +62,7 @@ table {
 /*END RESET*/
 /* START FONT FAMILY*/
 /* END FONT FAMILY*/
-/* line 22, ../sass/obaze_image_gallery.scss */
+/* line 44, ../sass/obaze_image_gallery.scss */
 body {
   background-image: url(../imgs/other/back_ground.png);
   background-repeat: repeat-x repeat-y;
@@ -71,19 +71,19 @@ body {
   font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
 }
 
-/* line 30, ../sass/obaze_image_gallery.scss */
+/* line 52, ../sass/obaze_image_gallery.scss */
 .body {
   clear: both;
   width: 100%;
 }
-/* line 34, ../sass/obaze_image_gallery.scss */
+/* line 56, ../sass/obaze_image_gallery.scss */
 .body .mainHeader {
   height: 85px;
   width: auto;
   overflow: hidden;
   background-color: white;
 }
-/* line 40, ../sass/obaze_image_gallery.scss */
+/* line 62, ../sass/obaze_image_gallery.scss */
 .body .mainHeader .logoContainer {
   width: 8%;
   height: auto;
@@ -91,7 +91,7 @@ body {
   margin-left: .75%;
   padding-top: 12px;
 }
-/* line 48, ../sass/obaze_image_gallery.scss */
+/* line 70, ../sass/obaze_image_gallery.scss */
 .body .mainHeader .navLinks {
   height: 55px;
   width: 45%;
@@ -99,16 +99,16 @@ body {
   margin-top: 10px;
   padding-top: 20px;
 }
-/* line 55, ../sass/obaze_image_gallery.scss */
+/* line 77, ../sass/obaze_image_gallery.scss */
 .body .mainHeader .navLinks ul {
   float: right;
   width: 40%;
 }
-/* line 60, ../sass/obaze_image_gallery.scss */
+/* line 82, ../sass/obaze_image_gallery.scss */
 .body .mainHeader .navLinks a {
   text-decoration: none;
 }
-/* line 65, ../sass/obaze_image_gallery.scss */
+/* line 87, ../sass/obaze_image_gallery.scss */
 .body .mainHeader .navLinks li {
   display: block;
   float: left;
@@ -117,67 +117,68 @@ body {
   padding-top: 12px;
 }
 
-/* line 76, ../sass/obaze_image_gallery.scss */
+/* line 98, ../sass/obaze_image_gallery.scss */
 a:link {
   color: black;
 }
 
-/* line 80, ../sass/obaze_image_gallery.scss */
+/* line 102, ../sass/obaze_image_gallery.scss */
 a:visited {
   color: black;
 }
 
-/* line 83, ../sass/obaze_image_gallery.scss */
+/* line 105, ../sass/obaze_image_gallery.scss */
 a:hover, a:active {
   color: red;
 }
 
-/* line 91, ../sass/obaze_image_gallery.scss */
+/* line 113, ../sass/obaze_image_gallery.scss */
 .wrapper {
   margin: 0 auto;
-  border: 1px solid #d000ff;
   width: 70%;
-  height: 3000px;
   clear: both;
   padding-top: 50px;
 }
-/* line 99, ../sass/obaze_image_gallery.scss */
+/* line 119, ../sass/obaze_image_gallery.scss */
 .wrapper .imageGallery {
   -moz-border-radius: 10px 10px;
   -webkit-border-radius: 10px 10px;
   -khtml-border-radius: 10px 10px;
   -o-border-radius: 10px 10px;
   border-radius: 10px 10px;
-  border: 20px #4e4e4e solid;
+  border: 0px #4e4e4e solid;
   margin: 0 auto;
   width: auto;
-  height: 700px;
+  height: 900px;
+  background-color: #bdbdbd;
 }
 
-/* line 104, ../sass/obaze_image_gallery.scss */
+/* line 126, ../sass/obaze_image_gallery.scss */
 #mainGallery {
   margin-left: 1.25%;
+  padding-top: 40px;
 }
-/* line 106, ../sass/obaze_image_gallery.scss */
+/* line 129, ../sass/obaze_image_gallery.scss */
 #mainGallery a {
   font-size: small;
   margin: .5%;
   margin-top: 10px;
 }
 
-/* line 113, ../sass/obaze_image_gallery.scss */
+/* line 136, ../sass/obaze_image_gallery.scss */
 #firstPic {
   width: 65%;
   display: block;
   margin: 0 auto;
+  border: solid gray 10px;
 }
 
-/* line 119, ../sass/obaze_image_gallery.scss */
+/* line 143, ../sass/obaze_image_gallery.scss */
 .hide {
   display: none;
 }
 
-/* line 123, ../sass/obaze_image_gallery.scss */
+/* line 147, ../sass/obaze_image_gallery.scss */
 #albumList {
   margin: 0 auto;
   width: 80%;
@@ -186,7 +187,7 @@ a:hover, a:active {
   margin-top: 20px;
   padding-left: 10%;
 }
-/* line 130, ../sass/obaze_image_gallery.scss */
+/* line 154, ../sass/obaze_image_gallery.scss */
 #albumList a {
   font-weight: bold;
   font-size: 1.5em;
@@ -194,8 +195,112 @@ a:hover, a:active {
   text-decoration: none;
   margin: 5%;
 }
+/* line 162, ../sass/obaze_image_gallery.scss */
+#albumList a:link {
+  color: black;
+}
+/* line 166, ../sass/obaze_image_gallery.scss */
+#albumList a:visited {
+  color: red;
+}
+/* line 169, ../sass/obaze_image_gallery.scss */
+#albumList a:hover, #albumList a:active {
+  color: red;
+}
+/* line 173, ../sass/obaze_image_gallery.scss */
+#albumList a:active {
+  color: red;
+}
 
-/* line 139, ../sass/obaze_image_gallery.scss */
-.lastCaption {
-  border: solid 1px red;
+/* line 179, ../sass/obaze_image_gallery.scss */
+#photoCaption {
+  margin-left: 45%;
+  margin-top: 20px;
+}
+
+/* line 185, ../sass/obaze_image_gallery.scss */
+.threeColumns {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  height: 350px;
+}
+/* line 193, ../sass/obaze_image_gallery.scss */
+.threeColumns h1 {
+  color: white;
+  margin-top: 20px;
+}
+/* line 198, ../sass/obaze_image_gallery.scss */
+.threeColumns .columnOne {
+  width: 32%;
+  height: 350px;
+  float: left;
+  background-color: #bdbdbd;
+  font-size: 1.5em;
+  text-align: center;
+  margin-right: 1.8%;
+}
+/* line 201, ../sass/obaze_image_gallery.scss */
+.threeColumns .columnOne p {
+  font-size: .7em;
+  text-align: left;
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 5%;
+  line-height: 1.2em;
+  color: white;
+}
+/* line 206, ../sass/obaze_image_gallery.scss */
+.threeColumns .columnTwo {
+  width: 32%;
+  height: 350px;
+  float: left;
+  background-color: #bdbdbd;
+  font-size: 1.5em;
+  text-align: center;
+}
+/* line 208, ../sass/obaze_image_gallery.scss */
+.threeColumns .columnTwo p {
+  font-size: .7em;
+  text-align: left;
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 5%;
+  line-height: 1.2em;
+  color: white;
+}
+/* line 213, ../sass/obaze_image_gallery.scss */
+.threeColumns .columnThree {
+  width: 32%;
+  height: 350px;
+  float: left;
+  background-color: #bdbdbd;
+  font-size: 1.5em;
+  text-align: center;
+}
+/* line 215, ../sass/obaze_image_gallery.scss */
+.threeColumns .columnThree p {
+  font-size: .7em;
+  text-align: left;
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 5%;
+  line-height: 1.2em;
+  color: white;
+}
+
+/* line 221, ../sass/obaze_image_gallery.scss */
+.footer {
+  clear: both;
+  background-color: #bdbdbd;
+  height: 50px;
+  margin-bottom: 20px;
+}
+/* line 226, ../sass/obaze_image_gallery.scss */
+.footer p {
+  text-align: center;
+  padding-top: 15px;
+  color: white;
 }

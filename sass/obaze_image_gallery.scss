@@ -15,7 +15,29 @@ $hover_color:#ff0000;
   border: $width $color solid;
   margin: 0 auto;
   width: auto;
-  height: 700px;}
+  height: 900px;}
+
+$bg_color: #575757;
+
+@mixin p_tag{
+	font-size:.7em;
+	text-align: left;
+	width: 80%;
+	padding-left: 10%;
+	padding-top: 5%;
+	line-height: 1.2em;
+	color: white;
+}
+
+  
+@mixin columns{
+		width: 32%;
+		height: 350px;
+		float: left;
+		background-color: lighten($bg_color, 40%);
+		font-size: 1.5em;
+		text-align: center;
+};
 
 
 
@@ -90,19 +112,20 @@ a:active{
 
 .wrapper{
 	margin: 0 auto;
-	border: 1px solid #d000ff;
 	width: 70%;
-	height: 3000px;
 	clear: both;
 	padding-top: 50px;
 	
 	.imageGallery{
-		@include rounded_borders(#4e4e4e, 20px)
+		@include rounded_borders(#4e4e4e, 0px);
+		background-color: lighten($bg_color, 40%);
+		
 	}
 }
 
 #mainGallery{
 margin-left: 1.25%;
+padding-top: 40px;
 	a{
 	font-size: small;
 	margin: .5%;
@@ -114,6 +137,7 @@ margin-left: 1.25%;
 	width:65%;
 	display: block;
 	margin: 0 auto;
+	border: solid gray 10px;
 }
 
 .hide{
@@ -134,13 +158,77 @@ padding-left: 10%;
 		text-decoration: none;
 		margin: 5%
 	}
+	
+	a:link{
+	color: $link_color;
+	}
+	
+a:visited{
+	color: $hover_color;
+}
+a:hover{
+	color: $hover_color;
 }
 
-.lastCaption{
-	border: solid 1px red;
+a:active{
+	color: $hover_color;
 }
 
+}
 
+#photoCaption{
+	margin-left: 45%;
+	margin-top: 20px;
+	
+}
+
+.threeColumns{
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	height: 350px;
+	
+	h1{
+		color: white;
+		margin-top: 20px;
+	}
+	
+	.columnOne{
+		@include columns;
+		margin-right: 1.8%;
+		p{
+			@include p_tag
+		}
+	}
+	
+	.columnTwo{
+		@include columns;
+		p{
+			@include p_tag
+		}
+	}
+	
+	.columnThree{
+		@include columns;
+		p{
+			@include p_tag
+		}
+	}
+}
+
+.footer{
+	clear:both;
+	background-color: lighten($bg_color, 40%);
+	height: 50px;
+	margin-bottom: 20px;
+	p{
+		text-align: center;
+		padding-top: 15px;
+		color: white;
+	}
+}
 
 
 
