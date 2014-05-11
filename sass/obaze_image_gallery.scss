@@ -6,7 +6,7 @@
 @mixin link_visited_color{color:#CACACA};
 $link_color:#000000;
 $hover_color:#ff0000;
-@mixin rounded_borders($color, $width: 80%, $rounding: 20px) {
+@mixin rounded_borders($color, $width: 80%, $rounding: 10px) {
   -moz-border-radius: $rounding $rounding;
   -webkit-border-radius: $rounding $rounding; 
   -khtml-border-radius: $rounding $rounding;
@@ -14,15 +14,15 @@ $hover_color:#ff0000;
   border-radius: $rounding $rounding;
   border: $width $color solid;
   margin: 0 auto;
-  width: 80%;
-  height: 500px;}
+  width: auto;
+  height: 700px;}
 
 
 
 body{
 	background-image: url(../imgs/other/back_ground.png);
 	background-repeat: repeat-x repeat-y;
-	font: 100%;
+	font: 10px;
 	width: 100%;
 	font-family: $lucida;
 }
@@ -85,7 +85,7 @@ a:hover{
 }
 
 a:active{
-	color: $hover_color;
+	@extend a:hover;
 }
 
 .wrapper{
@@ -94,13 +94,24 @@ a:active{
 	width: 70%;
 	height: 3000px;
 	clear: both;
+	padding-top: 50px;
 	
 	.imageGallery{
-		@include rounded_borders(#4e4e4e, 20px)}
+		@include rounded_borders(#4e4e4e, 20px)
+	}
 }
 
-#pic{
-	width:50%;
+#mainGallery{
+margin-left: 1.25%;
+	a{
+	font-size: small;
+	margin: .5%;
+	margin-top: 10px;
+	}
+}
+
+#firstPic{
+	width:65%;
 	display: block;
 	margin: 0 auto;
 }
@@ -109,7 +120,25 @@ a:active{
 	display:none;
 	}
 
+#albumList{
+margin: 0 auto;
+width: 80%;
+height: auto;
+margin-bottom: 20px;
+margin-top: 20px;
+padding-left: 10%;
+	a{
+		font-weight: bold;
+		font-size:1.5em;
+		color: $link_color;
+		text-decoration: none;
+		margin: 5%
+	}
+}
 
+.lastCaption{
+	border: solid 1px red;
+}
 
 
 

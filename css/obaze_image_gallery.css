@@ -66,7 +66,7 @@ table {
 body {
   background-image: url(../imgs/other/back_ground.png);
   background-repeat: repeat-x repeat-y;
-  font: 100%;
+  font: 10px;
   width: 100%;
   font-family: "lucida grande", "lucida sans unicode", "lucida sans", lucida, sans-serif;
 }
@@ -128,12 +128,7 @@ a:visited {
 }
 
 /* line 83, ../sass/obaze_image_gallery.scss */
-a:hover {
-  color: red;
-}
-
-/* line 87, ../sass/obaze_image_gallery.scss */
-a:active {
+a:hover, a:active {
   color: red;
 }
 
@@ -144,28 +139,63 @@ a:active {
   width: 70%;
   height: 3000px;
   clear: both;
+  padding-top: 50px;
 }
-/* line 98, ../sass/obaze_image_gallery.scss */
+/* line 99, ../sass/obaze_image_gallery.scss */
 .wrapper .imageGallery {
-  -moz-border-radius: 20px 20px;
-  -webkit-border-radius: 20px 20px;
-  -khtml-border-radius: 20px 20px;
-  -o-border-radius: 20px 20px;
-  border-radius: 20px 20px;
+  -moz-border-radius: 10px 10px;
+  -webkit-border-radius: 10px 10px;
+  -khtml-border-radius: 10px 10px;
+  -o-border-radius: 10px 10px;
+  border-radius: 10px 10px;
   border: 20px #4e4e4e solid;
   margin: 0 auto;
-  width: 80%;
-  height: 500px;
+  width: auto;
+  height: 700px;
 }
 
-/* line 102, ../sass/obaze_image_gallery.scss */
-#pic {
-  width: 50%;
+/* line 104, ../sass/obaze_image_gallery.scss */
+#mainGallery {
+  margin-left: 1.25%;
+}
+/* line 106, ../sass/obaze_image_gallery.scss */
+#mainGallery a {
+  font-size: small;
+  margin: .5%;
+  margin-top: 10px;
+}
+
+/* line 113, ../sass/obaze_image_gallery.scss */
+#firstPic {
+  width: 65%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 108, ../sass/obaze_image_gallery.scss */
+/* line 119, ../sass/obaze_image_gallery.scss */
 .hide {
   display: none;
+}
+
+/* line 123, ../sass/obaze_image_gallery.scss */
+#albumList {
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 10%;
+}
+/* line 130, ../sass/obaze_image_gallery.scss */
+#albumList a {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+  margin: 5%;
+}
+
+/* line 139, ../sass/obaze_image_gallery.scss */
+.lastCaption {
+  border: solid 1px red;
 }
